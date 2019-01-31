@@ -1,5 +1,5 @@
 body {
-	background-color: #f4e1f3;
+	background-color: #ffc970;
 	font-family: helvetica, sans-serif;
 	color: #ce6cc8;
 }
@@ -7,9 +7,9 @@ body {
 
 
 .title {
-	font-family: helvetica, sans-serif;
+	font-family: times, sans-serif;
 	font-size: 60px;
-	color: #ce6cc8;
+	color: #ffffff;
 
 }
 
@@ -23,4 +23,8 @@ body {
 	width: 100px;
 	height: 100px;
 	padding: 30px;
+	position: fixed;
+	left: 0px;
+	bottom: 100px;
+	text-align: right;
 }
