@@ -1,0 +1,26 @@
+body {
+	background-color: #f4e1f3;
+	font-family: helvetica, sans-serif;
+	color: #ce6cc8;
+}
+
+
+
+.title {
+	font-family: helvetica, sans-serif;
+	font-size: 60px;
+	color: #ce6cc8;
+
+}
+
+.title2 {
+	font-family: helvetica, sans-serif;
+	font-size: 30px;
+	color: #ce6cc8;
+}
+
+.box1 {
+	width: 100px;
+	height: 100px;
+	padding: 30px;
+}
