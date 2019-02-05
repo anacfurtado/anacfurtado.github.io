@@ -1,5 +1,5 @@
 body {
-	background-color: #ffc970;
+	background-color: #eee3dc;
 	font-family: helvetica, sans-serif;
 	color: #ce6cc8;
 }
@@ -9,7 +9,7 @@ body {
 .title {
 	font-family: times, sans-serif;
 	font-size: 60px;
-	color: #ffffff;
+	color: #eee3dc;
 
 }
 
@@ -27,4 +27,23 @@ body {
 	left: 0px;
 	bottom: 100px;
 	text-align: right;
+}
+
+.box2 {
+	width: 250px;
+	height: 100%;
+	padding: 0px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	background-color: #edc7b7;
+}
+/*ffc970*/
+
+
+.link {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	color: #ac3b61;
 }

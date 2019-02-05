@@ -1,0 +1,71 @@
+.text {
+	position: relative;
+	top: 300px;
+}
+
+.redbox1 {
+	background-color: #d12229;
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	right: 0px;
+	top: 100px;
+}
+
+.chef {
+	font-family: Snell Roundhand;
+	font-size: 60px;
+	color: #eee3dc;
+}
+
+.chef2 {
+	font-family: Snell Roundhand;
+	font-size: 60px;
+	color: #eee3dc;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+}
+
+.donkey {
+	font-family: comic sans MS;
+	font-size: 20px;
+	position: absolute;
+	top: 30px;
+}
+
+.donkey2 {
+	font-family: comic sans MS;
+	font-size: 20px;
+	position: absolute;
+	top: 80px;
+}
+
+.queen {
+	position: absolute;
+	top: 120px;
+	left: 220px;
+	font-size: 10px;
+}
+
+.donkey3 {
+	font-family: comic sans MS;
+	font-size: 20px;
+	position: absolute;
+	top: 120px;
+}
+
+.king1 {
+	width: 1000px;
+	position: absolute;
+	font-size: 50px;
+	top: 190px;
+}
+
+.shrek1 {
+	font-family: Newbery Sans Pro;
+	font-size: 70px;
+	position: absolute;
+	right: 80px;
+	top: 200px;
+}
