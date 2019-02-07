@@ -1,0 +1,58 @@
+body {
+	font-family: Newbery Sans Pro;
+	margin: 20px;
+}
+
+.cup {
+	border-style: solid;
+	border-width: 0px 5px 5px 5px;
+	border-color: #b87333;
+	width: 400px;
+	margin-top: 50px;
+}
+
+.moscow {
+	font-family: Newbery Sans Pro , sans-serif;
+}
+
+.foam {
+	background-color: #FFFFE0;
+	width: 400px;
+	height: 100px;
+	text-align: right;
+}
+
+.lemon {
+	background-color: #9ACD32;
+	width: 400px;
+	height: 300px;
+	text-align: right;
+}
+
+.vodka {
+	background-color: #F0E68C;
+	width: 400px;
+	height: 200px;
+	text-align: right;
+}
+
+#description {
+	width: 500px;
+	height: auto;
+	border-style: solid;
+	border-width: 5px 5px 5px 5px;
+	border-color: #000000;
+	padding: 10px;
+	margin: 30px;
+	text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
