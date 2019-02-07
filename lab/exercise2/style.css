@@ -1,6 +1,11 @@
 body {
 	font-family: Newbery Sans Pro;
 	margin: 20px;
+	background-color: #F7F9F9;
+}
+
+h1 {
+	font-size: 50px;
 }
 
 .cup {
