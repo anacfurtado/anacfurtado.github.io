@@ -1,0 +1,14 @@
+body {
+	background-color: #e0eb27;
+}
+
+.shrek {
+	rotate: 180deg;
+	width: 50%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	transform: rotate(180deg);
+}
