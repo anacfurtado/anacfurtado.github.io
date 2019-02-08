@@ -1,3 +1,114 @@
+body {
+	background-color: #F39C12;
+	font-family: arial , sans-serif;
+	color: #ffffff;
+	margin: 50px;
+	margin: 50px;
+}
+
+.text {
+	position: relative;
+	top: 3000px;
+}
+
+.chef, .chef2 {
+	font-size: 200px;
+	opacity: 0.5;
+	font-style: oblique;
+}
+
+.donkey, .donkey2, .donkey3 {
+	font-size: 80px;
+	position: absolute;
+	right: 0px;
+	margin-top: 0px;
+	color: #E5E7E9;
+}
+
+.donkey {
+	top: 150px;
+}
+
+.donkey2 {
+	top: 600px;
+}
+
+.queen  {
+	font-size: 30px;
+	position: absolute;
+	color: #F4D03F;
+	
+}
+
+.king1 {
+	font-family: georgia, serif;
+	font-size: 100px;
+	position: absolute;
+	left: 100px;
+	top: 1300px;
+	color: #E5E7E9;
+	text-align: left;
+	width: 1000px;
+}
+
+.shrek1 {
+	font-family: Newbery Sans Pro, sans-serif;
+	font-size: 200px;
+	color: #FE0000;
+	position: absolute;
+	top: 1700px;
+	right: 0px;
+}
+
+.queen2 {
+	font-size: 30px;
+	position: absolute;
+	color: #F4D03F;
+	top: 2200px;
+}
+
+.king2 {
+	font-family: georgia, serif;
+	font-size: 100px;
+	position: absolute;
+	left: 100px;
+	top: 2300px;
+	color: #E5E7E9;
+	text-align:left;
+	width: 1000px;
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+.fiona {
+	font-weight: 100;
+	font-style: italic;
+	font-size: 40px;
+	position: absolute;
+	top: 3000px;
+	right: 700px; 
+
+}
+
+.shrek2 {
+	font-family: Newbery Sans Pro, sans-serif;
+	font-size: 100px;
+	color: #FE0000;
+	position: absolute;
+	top: 3100px;
+	right: 20px;
+	width: 1300px;
+	text-align: right;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/*
+
 .text {
 	position: relative;
 	top: 300px;
@@ -69,3 +180,5 @@
 	right: 80px;
 	top: 200px;
 }
+
+*/
