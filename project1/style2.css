@@ -1,6 +1,6 @@
 body {
-	background-color: #FFA726;
-	font-family: antique olive , sans-serif;
+	background-color: #F39C12;
+	font-family: basic sans regular , sans-serif;
 	color: #ffffff;
 	margin: 50px;
 	margin: 50px;
@@ -8,7 +8,7 @@ body {
 
 .text {
 	position: relative;
-	top: 6500px;
+	top: 3000px;
 }
 
 .chef, .chef2 {
@@ -17,8 +17,8 @@ body {
 	font-style: oblique;
 }
 
-.donkey, .donkey2, .donkey3, .donkey4 {
-	font-size: 60px;
+.donkey, .donkey2, .donkey3 {
+	font-size: 80px;
 	position: absolute;
 	right: 0px;
 	margin-top: 0px;
@@ -26,17 +26,17 @@ body {
 }
 
 .donkey {
-	top: 190px;
+	top: 150px;
 }
 
 .donkey2 {
-	top: 640px;
+	top: 600px;
 }
 
 .queen  {
 	font-size: 30px;
 	position: absolute;
-	color: #FFEE58;
+	color: #F4D03F;
 	
 }
 
@@ -46,7 +46,7 @@ body {
 	position: absolute;
 	left: 100px;
 	top: 1300px;
-	color: #ffffff;
+	color: #E5E7E9;
 	text-align: left;
 	width: 1000px;
 }
@@ -63,7 +63,7 @@ body {
 .queen2 {
 	font-size: 30px;
 	position: absolute;
-	color: #FFEE58;
+	color: #F4D03F;
 	top: 2200px;
 }
 
@@ -73,7 +73,7 @@ body {
 	position: absolute;
 	left: 100px;
 	top: 2300px;
-	color: #ffffff;
+	color: #E5E7E9;
 	text-align:left;
 	width: 1000px;
 }
@@ -105,116 +105,6 @@ body {
 
 .italic {
 	font-style: italic;
-}
-
-.fiona2 {
-	font-weight: 100;
-	font-style: italic;
-	font-size: 40px;
-	position: absolute;
-	top: 3600px;
-	right: 700px;
-}
-
-.king3 {
-	font-family: georgia, serif;
-	font-size: 100px;
-	position: absolute;
-	left: 100px;
-	top: 3800px;
-	color: #ffffff;
-	text-align:left;
-	width: 1000px;
-}
-
-.shrek3 {
-	font-family: Newbery Sans Pro, sans-serif;
-	font-size: 100px;
-	color: #FE0000;
-	position: absolute;
-	top: 4500px;
-	right: 20px;
-	width: 1300px;
-	text-align: right;
-}
-
-.king4 {
-	font-family: georgia, serif;
-	font-size: 100px;
-	position: absolute;
-	left: 100px;
-	top: 4800px;
-	color: #ffffff;
-	text-align:left;
-	width: 1000px;
-}
-
-.queen3 {
-	font-size: 30px;
-	position: absolute;
-	color: #FFEE58;
-	top: 5600px;
-}
-
-.queen4 {
-	font-size: 60px;
-	position: absolute;
-	left: 900px;
-	color: #FFEE58;
-	top: 5900px;
-}
-
-.fiona3 {
-	font-weight: 100;
-	font-style: italic;
-	font-size: 60px;
-	position: absolute;
-	top: 6300px;
-	right: 700px;
-}
-
-.shrek4 {
-	font-family: Newbery Sans Pro, sans-serif;
-	font-size: 100px;
-	color: #FE0000;
-	position: absolute;
-	top: 6700px;
-	right: 300px;
-	width: 1300px;
-	text-align: right;
-}
-
-.king5 {
-	font-family: georgia, serif;
-	font-size: 100px;
-	position: absolute;
-	left: 100px;
-	top: 7100px;
-	color: #ffffff;
-	text-align:left;
-	width: 1000px;
-}
-
-.fiona4{
-	font-weight: 100;
-	font-style: italic;
-	font-size: 60px;
-	position: absolute;
-	top: 7500px;
-	right: 700px;
-}
-
-.queen5 {
-	font-size: 30px;
-	position: absolute;
-	left: 900px;
-	color: #FFEE58;
-	top: 7800px;
-}
-
-.donkey4 {
-	top: 8500px;
-	font-size: 100px;
 }
 
 /*
