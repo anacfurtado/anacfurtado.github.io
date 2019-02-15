@@ -227,6 +227,20 @@ body {
 	font-size: 450px;
 }
 
+.whitebox {
+	background-color: #ffffff;
+	position: absolute;
+	top: 11300px;
+	width: 100%;
+	font-size: 50px;
+	color: #000000;
+}
+
+.title {
+	text-align: right;
+
+}
+
 /*
 
 .text {
