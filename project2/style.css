@@ -1,3 +1,7 @@
+body {
+	font-family: basic sans, sans-serif;
+}
+
 .title {
 	position: fixed;
 	font-size: 200px;
@@ -15,9 +19,23 @@
 
 .instructions {
 	position: absolute;
-	left: 900px;
+	left: 1000px;
 	width: 500px;
 	display: inline;
+}
+
+.ingredients {
+	position: fixed;
+	top: 660px;
+	left: 120px;
+	font-size: 30px;
+}
+
+.why {
+	position: fixed;
+	top: 660px;
+	left: 390px;
+	font-size: 30px;
 }
 
 .um, .dois, .tres, .quatro, .cinco, .seis, .sete {
