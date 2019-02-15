@@ -1,0 +1,122 @@
+.title {
+	position: fixed;
+	font-size: 200px;
+	bottom: 0px;
+	left: 40px;
+	margin: 0px;
+	
+	line-height: -20px;
+}
+
+.text {
+	position: absolute;
+	top: 700px;
+}
+
+.instructions {
+	position: absolute;
+	left: 900px;
+	width: 500px;
+	display: inline;
+}
+
+.um, .dois, .tres, .quatro, .cinco, .seis, .sete {
+	font-size: 20px;
+}
+
+.one {
+	position: absolute;
+	top: 17px;
+	font-size: 50px;
+}
+
+.um {
+	position: absolute;
+	left: 50px;
+	top: 40px;
+	
+}
+
+.two {
+	position: absolute;
+	top: 110px;
+	
+	font-size: 50px;
+}
+
+.dois {
+	position: absolute;
+	left: 50px;
+	top: 135px;
+	
+}
+
+.three {
+	position: absolute;
+	top: 230px;
+	
+	font-size: 50px;
+}
+
+.tres {
+	position: absolute;
+	left: 50px;
+	top: 230px;
+}
+
+.four {
+	position: absolute;
+	top: 360px;
+	
+	font-size: 50px;
+}
+
+.quatro {
+	position: absolute;
+	left: 50px;
+	top: 370px;
+}
+
+.five {
+	position: absolute;
+	top: 480px;
+	
+	font-size: 50px;
+}
+
+.cinco {
+	position: absolute;
+	left: 50px;
+	top: 500px;
+}
+
+.six {
+	position: absolute;
+	top: 600px;
+	
+	font-size: 50px;
+}
+
+.seis {
+	position: absolute;
+	left: 50px;
+	top: 620px;
+}
+
+.seven {
+	position: absolute;
+	top: 705px;
+	
+	font-size: 50px;
+}
+
+.sete {
+	position: absolute;
+	left: 50px;
+	top: 740px;
+}
+
+
+
+
+
