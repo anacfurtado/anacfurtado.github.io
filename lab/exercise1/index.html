@@ -12,14 +12,74 @@
 
 	<body>
 
-		<audio controls autoplay>
+		<audio class="audio" controls autoplay>
 			<source src="audio/dinner.mp3" type="audio/mp3">
 		</audio>
 
 		<img class="shrek" src="images/shrek.png">
 
-		<iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/DBCOd12WEQg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+		<img class="donkey" src="images/donkey.png">
+
+
+		<div id="muteYouTubeVideoPlayer"></div>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script class="video1">
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'DBCOd12WEQg', // YouTube Video ID
+    width: 560,               // Player width (in px)
+    height: 316,              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 1,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+
+
+</script>
 		
+		<iframe class="video2" width="560" height="315" src="https://www.youtube.com/embed/DV68gBlNMZE?&autoplay=1" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<img class="fiona" src="images/fiona.png">
+
+		<img class="harold" src="images/harold.png">
+
+		<iframe class="video3" width="560" height="315" src="https://www.youtube.com/embed/U8BxQNfMp18?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<img class="lillian" src="images/lillian.png">
+
+		<img class="fork" src="images/fork.png">
+
+		<img class="knife" src="images/knife.png">
+
+		<img class="splatter" src="images/splatter.png">
+
+		<img class="orange" src="images/orange.png">
+
+		<img class="pink" src="images/pink.png">
+
+		<img class="green" src="images/green.png">
+
+		<img class="tomato" src="images/tomato.png">
+
+		<img class="tomatosplash" src="images/tomatosplash.png">
+
+		<img class="bone" src="images/bone.png">
 
 	</body>
 

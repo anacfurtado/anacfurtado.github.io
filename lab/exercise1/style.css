@@ -2,20 +2,163 @@ body {
 	background-color: #e0eb27;
 }
 
-.shrek {
-	rotate: 180deg;
-	width: 50%;
+.audio {
 	position: fixed;
 	top: 0px;
-	right: 0px;
-	opacity: 0.6;
+	left: 0px;
+}
+
+.shrek {
+	rotate: 180deg;
+	width: 500px;
+	position: fixed;
+	top: 0px;
+	left: 300px;
+	opacity: 0.9;
 	filter: alpha(opacity=50);
 	transform: rotate(180deg);
 
 
 }
 
+.donkey {
+	position: absolute;
+	width: 200px;
+	top: 50px;
+	left: 0px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+}
+
 .video1 {
-	
+	position: fixed;
+	top: 0px;
+	left: 0px;
 	
 }
+
+.video2 {
+	position: fixed;
+	top: 400px;
+	left: 400px;
+	width: 600px;
+	height: 200px;
+}
+
+
+.fiona {
+	position: fixed;
+	width: 500px;
+	top: 110px;
+	left: 560px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+	transform: rotate(90deg);
+}
+
+.harold {
+	position: fixed;
+	width: 800px;
+	top: 270px;
+	left: 560px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+	transform: rotate(-45deg);
+}
+
+.video3 {
+	position: fixed;
+	top: 600px;
+	left: 900px;
+	width: 300px;
+	height: 200px;
+	z-index: -1;
+}
+
+.lillian {
+	position: fixed;
+	width: 200px;
+	bottom: 0px;
+	right: 300px;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+	
+}
+
+.fork {
+	position: absolute;
+	transform: rotate(30deg);
+}
+
+.knife {
+	position: absolute;
+	top:250px;
+	left: 100px;
+	width: 600px;
+	z-index: 10;
+	opacity: 0.9;
+	filter: alpha(opacity=50);
+
+}
+
+.splatter {
+	width: 100%;
+	position: fixed;
+}
+
+.orange {
+	position: fixed;
+	left: 0px;
+	width: 800px;
+	opacity: 0.7;
+	filter: alpha(opacity=50);
+
+}
+
+.pink {
+	position: fixed;
+	right: 50px;
+	width: 800px;
+	opacity: 0.7;
+	filter: alpha(opacity=50);
+}
+
+.green {
+	position: fixed;
+	top: 0px;
+	left: 50px;
+	width: 500px;
+	opacity: 0.7;
+	filter: alpha(opacity=50);
+	transform: rotate(90deg);
+}
+
+.tomatosplash {
+	position: fixed;
+	top: 200px;
+	left: 320px;
+	width: 300px;
+	
+	transform: rotate(90deg);
+}
+
+.tomato {
+	position: fixed;
+	top: 680px;
+	left: 1300px;
+	width: 200px;
+}
+
+.bone {
+	position: fixed;
+	top: 430px;
+	left: 930px;
+	width: 300px;
+}
+
+
+
+
+
+
+
