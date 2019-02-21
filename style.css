@@ -4,6 +4,20 @@ body {
 	color: #ce6cc8;
 }
 
+.studio {
+	width: 400px;
+	height: 500px;
+	padding: 0px;
+	position: relative;
+	right: 400px;
+	bottom: 0px;
+	background-color: #edc7b7;
+	z-index: 100;
+}
+
+.lab {
+
+}
 
 
 .title {
