@@ -27,11 +27,20 @@ body {
 	color: #BBDEFB;
 }
 
-.ingredients {
+.ingredients1 {
 	position: fixed;
 	top: 650px;
 	left: 120px;
 	font-size: 30px;
+	text-decoration: none;
+	color: #BBDEFB;
+}
+
+.ingredients {
+	position: fixed;
+	top: 650px;
+	left: 120px;
+	font-size: 60px;
 	text-decoration: none;
 	color: #BBDEFB;
 }

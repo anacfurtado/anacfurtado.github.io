@@ -1,5 +1,8 @@
 body {
-	font-family: basic sans, sans-serif;
+	/*font-family: basic sans, sans-serif;*/
+	font-family: basic-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .title {
@@ -24,12 +27,23 @@ body {
 	display: inline;
 }
 
-.ingredients {
+.ingredients1 {
 	position: fixed;
 	top: 650px;
 	left: 120px;
 	font-size: 30px;
 	text-decoration: none;
+	text-decoration: underline;
+	color: #000000;
+}
+
+.ingredients {
+	position: fixed;
+	top: 650px;
+	left: 120px;
+	font-size: 60px;
+	text-decoration: none;
+	text-decoration: underline;
 	color: #000000;
 }
 
@@ -165,7 +179,37 @@ body:hover .mybluebox {
 	left: 500px;
 }
 
+/* ingredients.html */
 
+.ingredientes {
+	position: absolute;
+	width: 500px;
+	height: auto;
+	
+	right: 100px;
+	top: 200px;
+	font-size: 50px;
 
+}
+
+.title2 {
+	position: fixed;
+	font-size: 200px;
+	bottom: 200px;
+	left: 40px;
+	margin: 0px;
+	
+	line-height: -20px;
+}
+
+.ingredients2 {
+	position: fixed;
+	top: 650px;
+	left: 330px;
+	font-size: 30px;
+	text-decoration: none;
+	text-decoration: underline;
+	color: #000000;
+}
 
 
