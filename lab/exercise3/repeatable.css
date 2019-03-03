@@ -1,0 +1,186 @@
+#lowercase-a {
+	position: relative;
+  width:400px;
+  height:500px;
+  
+  display: inline-block;
+
+}
+
+
+.box1 {
+	position: absolute;
+	bottom: 0px;
+	left: 70px;
+	background-color: #000000;
+	width: 120px;
+	height: 250px;
+
+}
+
+.box2 {
+	position: absolute;
+	bottom: 0px;
+	left: 200px;
+	background-color: #000000;
+	width: 120px;
+	height: 250px;
+}
+
+.box3 {
+	position: absolute;
+	top: 410px;
+	left: 210px;
+	background-color: #000000;
+	width: 190px;
+	height: 90px;
+}
+
+
+
+
+
+
+
+#lowercase-c {
+	position: relative;
+  width:400px;
+  height:500px;
+  display: inline-block;
+
+}
+
+
+
+.box4 {
+	position: absolute;
+	bottom: 0px;
+	left: 70px;
+	background-color: #000000;
+	width: 120px;
+	height: 250px;
+
+}
+
+.box5 {
+	position: absolute;
+	top: 250px;
+	left: 200px;
+	background-color: #000000;
+	width: 190px;
+	height: 120px;
+}
+
+.box6 {
+	position: absolute;
+	top: 380px;
+	left: 200px;
+	background-color: #000000;
+	width: 190px;
+	height: 120px;
+}
+
+
+
+
+
+
+
+
+#lowercase-v {
+	position: relative;
+  width:400px;
+  height:500px;
+  display: inline-block;
+
+}
+
+
+
+.box7 {
+	position: absolute;
+	bottom: 0px;
+	left: 110px;
+	background-color: #000000;
+	width: 140px;
+	height: 250px;
+
+}
+
+.box8 {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: #000000;
+	width: 140px;
+	height: 250px;
+}
+
+.box9 {
+	position: absolute;
+	top: 250px;
+	left: 210px;
+	background-color: #ffffff;
+	width: 90px;
+	height: 90px;
+}
+
+.box10 {
+	position: absolute;
+	top: 300px;
+	left: 230px;
+	background-color: #ffffff;
+	width: 50px;
+	height: 90px;
+}
+
+.box11 {
+	position: absolute;
+	top: 350px;
+	left: 240px;
+	background-color: #ffffff;
+	width: 30px;
+	height: 90px;
+}
+
+
+
+
+#number-2 {
+	position: relative;
+  width:400px;
+  height:500px;
+  display: inline-block;
+
+}
+
+
+
+.box12 {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: #000000;
+	width: 230px;
+	height: 350px;
+
+}
+
+.box13 {
+	position: absolute;
+	bottom: 0px;
+	left: 100px;
+	top: 250px;
+	background-color: #ffffff;
+	width: 200px;
+	height: 20px;
+}
+
+.box14 {
+	position: absolute;
+	top: 400px;
+	left: 260px;
+	background-color: #ffffff;
+	width: 141px;
+	height: 20px;
+}
