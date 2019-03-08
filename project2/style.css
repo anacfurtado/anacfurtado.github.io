@@ -493,6 +493,65 @@ body:hover .mybluebox {
 
 }
 
+.image {
+	position: relative;
+	width: 40vw;
+	top: 30vh;
+	left: 20vh;
+
+}
+
+@media (max-width: 500px) {
+.image {
+    display: inline-block;
+    left: 30%;
+    top: -10vh;
+    position: relative;
+    bottom: 10vh;
+    z-index: -10;
+   
+  }
+}
+
+.image2 {
+	position: relative;
+	width: 30vw;
+	top: 25vh;
+	left: 20vh;
+
+}
+
+@media (max-width: 500px) {
+.image2 {
+    display: inline-block;
+    left: -30%;
+    top: 10vh;
+    position: relative;
+    bottom: 10vh;
+    z-index: -10;
+   
+  }
+}
+
+.image5 {
+	position: relative;
+	width: 25vw;
+	top: 20vh;
+	left: 30vh;
+
+}
+
+@media (max-width: 500px) {
+.image5 {
+    display: inline-block;
+    left: -30%;
+    top: 13vh;
+    position: relative;
+    bottom: 10vh;
+    z-index: -10;
+   
+  }
+}
 
 
 
