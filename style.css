@@ -1,29 +1,40 @@
 body {
-	background-color: #eee3dc;
+	background-color: #C4C4C4;
 	font-family: helvetica, sans-serif;
 	color: #ce6cc8;
 }
 
-.studio {
-	width: 400px;
-	height: 500px;
-	padding: 0px;
-	position: relative;
-	right: 400px;
-	bottom: 0px;
-	background-color: #edc7b7;
-	z-index: 100;
+h1 {
+	color: #C4C4C4;
+	font-family: helvetica;
 }
 
-.lab {
 
+.square {
+	width: 400px;
+	height: 500px;
+	position: fixed;
+	top: 20vh;
+	left: 25vw;
+	background-color: white;
+	text-align: center;
+}
+
+.square2 {
+	width: 400px;
+	height: 500px;
+	position: fixed;
+	top: 20vh;
+	left: 60vw;
+	background-color: white;
+	text-align: center;
 }
 
 
 .title {
 	font-family: times, sans-serif;
 	font-size: 60px;
-	color: #eee3dc;
+	color: #C4C4C4;
 
 }
 
@@ -50,7 +61,7 @@ body {
 	position: fixed;
 	left: 0px;
 	bottom: 0px;
-	background-color: #edc7b7;
+	background-color: white;
 }
 /*ffc970*/
 
@@ -60,4 +71,5 @@ body {
 	left: 0px;
 	top: 0px;
 	color: #ac3b61;
+	text-decoration: none;
 }
