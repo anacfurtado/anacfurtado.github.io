@@ -18,14 +18,14 @@
 	
 }
 
-.sun:hover {
-	animation-name: sun;
+.animation {
+	animation-name: animation;
 	animation-duration: 5s;
-	animation-iteration-count: 10;
+	animation-iteration-count: 1;
 }
 
 
-@keyframes sun {
+@keyframes animation {
 	0% { top: 20vh;
 	left: 20vh; }
 	15%   {top: 30vh;
@@ -36,6 +36,10 @@
 			left: 60vw;}
   100% {top: 100vh;
 			left: 80vw;}
+}
+
+.newbg {
+	background-color: black;
 }
 
 
