@@ -55,6 +55,73 @@ console.log(msg);
 
 
 
+var currentTemperature = 43
+var temperatureSA = 67
+
+
+
+function fToC(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = "The temperature in New York City is " + fToCel + '\xB0C at 10:23.'
+    console.log(message);
+}
+
+fToC(43);
+
+
+
+function fToCe(fahrenheit) 
+{
+  var fTemp = fahrenheit;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = "The temperature in South Africa is " + fToCel + '\xB0C at 10:23.'
+    console.log(message);
+}
+
+fToCe(67);
+
+
+
+
+
+for ( var i = 0; i < 5; i++ ) {
+  console.log("This loop ran " + i + " times<br>");
+}
+
+
+for(var counter=0; counter<10; counter++){
+
+        var box2 = '<p class="bluetext"> hi </p>';
+        $('.box1').append(box2); 
+  
+  }
+
+for(var counter=0; counter<10; counter++){
+
+        var box2 = '<p class="redtext"> hi </p>';
+        $('.box1').append(box2); 
+  
+  }
+
+for(var counter=0; counter<10; counter++){
+
+        var box2 = '<p class="yellowtext"> hi </p>';
+        $('.box1').append(box2); 
+  
+  }
+
+for(var counter=0; counter<10; counter++){
+
+        var box2 = '<p class="fixedbox"> hi </p>';
+        $('.box1').append(box2); 
+  
+  }
+  
+
+
+
 
 
 

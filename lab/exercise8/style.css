@@ -1,0 +1,30 @@
+.bluetext {
+  color: yellow;
+  background-color: yellow;
+  width: 50%;
+}
+
+.redtext {
+  color: green;
+  background-color: green;
+  width: 70%;
+  position: relative;
+  right: 0px;
+}
+
+.yellowtext {
+  color: blue;
+  background-color: blue;
+  width: 90%;
+  position: relative;
+  right: 0px;
+}
+
+.fixedbox {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  
+}
+
+
