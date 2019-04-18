@@ -1,0 +1,29 @@
+.bluetext {
+  color:blue;
+  background-color: blue;
+  width: 50%;
+  height: 15px;
+ 
+}
+
+.greentext {
+  color:green;
+  background-color: green;
+  width: 70%;
+  height: 15px;
+   
+}
+
+
+.yellowtext {
+  color:yellow;
+  background-color: yellow;
+  width: 90%;
+  height: 15px;
+  position: relative;
+  right: 0px;
+ 
+}
+
+
+

@@ -12,7 +12,7 @@ h1 {
 
 .square {
 	width: 400px;
-	height: 500px;
+	height: auto;
 	position: fixed;
 	top: 20vh;
 	left: 25vw;
@@ -22,7 +22,7 @@ h1 {
 
 .square2 {
 	width: 400px;
-	height: 500px;
+	height: auto;
 	position: fixed;
 	top: 20vh;
 	left: 60vw;
