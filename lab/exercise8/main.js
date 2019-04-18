@@ -82,9 +82,12 @@ function fToCe(fahrenheit)
 
 fToCe(67);
 
+//date
 
+var date = new Date().getDate();
+console.log (date);
 
-
+//pattern
 
 for ( var i = 0; i < 5; i++ ) {
   console.log("This loop ran " + i + " times<br>");
@@ -94,6 +97,8 @@ for ( var i = 0; i < 5; i++ ) {
 for(var counter=0; counter<10; counter++){
 
         var box2 = '<p class="bluetext"> hi </p>';
+        console.log(box2);
+        // $('.box1').text("hello"); 
         $('.box1').append(box2); 
   
   }

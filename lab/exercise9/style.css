@@ -1,0 +1,48 @@
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #00FFFF;
+    font-size: 60px;
+    font-family: futura;
+    letter-spacing: 12px;
+}
+
+
+.purple {
+	background-color: purple;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.red {
+	background-color: red;
+}
+
+.white {
+	background-color: white;
+}
+
+#txt {
+	position: fixed;
+	top: 50vh;
+	left: 50vh;
+	font-family: helvetica;
+	font-size: 50px;
+	color: grey;
+}
