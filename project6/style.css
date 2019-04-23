@@ -1,0 +1,175 @@
+
+
+p {
+	position: absolute;
+	top: 50px;
+}
+
+
+.bottombar {
+	width: 100vw;
+	height: 10vh;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: white;
+	background-color: grey;
+	border-color: grey;
+	border-width: 5px;
+	border-style: solid;
+	margin: 0px;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 30px;
+	font-family: orpheuspro, serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+.pick {
+	margin-top: 20px;
+	font-size: 30px;
+	font-family: orpheuspro, serif;
+	font-weight: 400;
+	font-style: normal;
+	position: absolute;
+	color: grey;
+	text-align: center;
+	width: 100vw;
+	height: 10vh;
+	position: absolute;
+	top: 0px;
+
+}
+
+
+.box1 {
+	position: absolute;
+	left: 0vw;
+	width: 20vw;
+	height: 80vh;
+	border-color: grey;
+	border-width: 3px;
+	border-style: solid;
+	bottom: 0px;
+	border-top-width: 3px;
+}
+
+.box2 {
+	
+	position: absolute;
+	left: 20vw;
+	width: 20vw;
+	height: 80vh;
+	border-color: grey;
+	border-width: 3px;
+	border-style: solid;
+	bottom: 0px;
+	border-top-width: 3px;
+}
+
+.box3 {
+	position: absolute; 
+	left: 40vw;
+	width: 20vw;
+	height: 80vh;
+	border-color: grey;
+	border-width: 3px;
+	border-style: solid;
+	bottom: 0px;
+	border-top-width: 3px;
+}
+
+.box4 {
+	position: absolute;
+	left: 60vw;
+	width: 20vw;
+	height: 80vh;
+	border-color: grey;
+	border-width: 3px;
+	border-style: solid;
+	bottom: 0px;
+	border-top-width: 3px;
+}
+
+.box5 {
+	position: absolute;
+	left: 80vw;
+	width: 20vw;
+	height: 80vh;
+	border-color: grey;
+	border-width: 3px;
+	border-style: solid;
+	bottom: 0px;
+	border-top-width: 3px;
+}
+
+
+/* COLORS */
+
+.nyc9-13 {
+	background-color: #383D3B;
+}
+
+/* RIO */
+
+.rio17-20 {
+	background-color: #94B0DA;
+}
+
+.rio20-24 {
+	background-color: #E0BE36;
+}
+
+.rio25-30 {
+	background-color: #61E8E1;
+}
+
+.rio30-35 {
+	background-color: #75DBCD;
+}
+
+/* SP */
+
+.sp20-25 {
+	background-color: #998650;
+}
+
+.sp25-30 {
+	background-color: #697A21;
+}
+
+/* CCG */
+
+.ccg5-10 {
+	background-color: #CDCACC;
+}
+
+.ccg10-15 {
+	background-color: #AC7B84;
+}
+
+.ccg15-20 {
+	background-color: #693668;
+}
+
+
+
+/* CARTAGENA */
+
+.ctg10-15 {
+	background-color: #F5E3E0;
+}
+
+.ctg15-20 {
+	background-color: #CEE397;
+}
+
+.ctg20-30 {
+	background-color: #FCA17D;
+}
+/* p ctg #CEE397 
+
+
+*/

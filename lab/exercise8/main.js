@@ -34,7 +34,7 @@ var currentHour = new Date().getHours()
 console.log (currentHour)
 
 
-	if (currentHour = 11) {
+	if (currentHour == 11) {
 		var msg = "It is 11 now"
 	} else {
 		var msg = "It is not 11 yet"
@@ -94,36 +94,61 @@ for ( var i = 0; i < 5; i++ ) {
 }
 
 
-for(var counter=0; counter<10; counter++){
+// for(var counter=0; counter<10; counter++){
 
-        var box2 = '<p class="bluetext"> hi </p>';
-        console.log(box2);
-        // $('.box1').text("hello"); 
-        $('.box1').append(box2); 
+//         var box2 = '<p class="bluetext"> hi </p>';
+//         console.log(box2);
+//         // $('.box1').text("hello"); 
+//         $('.box1').append(box2); 
+  
+//   }
+
+// for(var counter=0; counter<10; counter++){
+
+//         var box2 = '<p class="redtext"> hi </p>';
+//         $('.box1').append(box2); 
+  
+//   }
+
+// for(var counter=0; counter<10; counter++){
+
+//         var box2 = '<p class="yellowtext"> hi </p>';
+//         $('.box1').append(box2); 
+  
+//   }
+
+// for(var counter=0; counter<10; counter++){
+
+//         var box2 = '<p class="fixedbox"> hi </p>';
+//         $('.box1').append(box2); 
+  
+//   }
+  
+
+  for(var i=0; i<10; i++){
+
+        var box2 = '<p class="bluetext"></p>';
+        $('.box').append(box2); 
+  
+  }
+  
+
+for(var i=0; i<10; i++){
+
+        var box2 = '<p class="greentext"></p>';
+        $('.box').append(box2); 
   
   }
 
-for(var counter=0; counter<10; counter++){
+for(var i=0; i<10; i++){
 
-        var box2 = '<p class="redtext"> hi </p>';
-        $('.box1').append(box2); 
-  
-  }
-
-for(var counter=0; counter<10; counter++){
-
-        var box2 = '<p class="yellowtext"> hi </p>';
-        $('.box1').append(box2); 
-  
-  }
-
-for(var counter=0; counter<10; counter++){
-
-        var box2 = '<p class="fixedbox"> hi </p>';
-        $('.box1').append(box2); 
+        var box2 = '<p class="yellowtext"></p>';
+        $('.box').append(box2); 
   
   }
   
+
+
 
 
 
