@@ -193,7 +193,7 @@ $(document).ready(function(){
 
     function myWeatherInterpretation3(){
         
-    	if (temp > 20 && temp <25) {
+    	if (temp > 20 && temp < 25) {
     		$('.box3').addClass('sp20-25')
     	}
 
