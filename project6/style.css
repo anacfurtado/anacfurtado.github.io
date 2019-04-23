@@ -1,4 +1,6 @@
-
+body {
+	background-color: grey;
+}
 
 p {
 	position: absolute;
@@ -34,7 +36,7 @@ p {
 	font-weight: 400;
 	font-style: normal;
 	position: absolute;
-	color: grey;
+	color: white;
 	text-align: center;
 	width: 100vw;
 	height: 10vh;
