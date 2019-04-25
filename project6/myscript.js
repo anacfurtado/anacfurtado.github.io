@@ -142,18 +142,13 @@ $(document).ready(function(){
 
 //RIO   
     function myWeatherInterpretation1(){
-        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
-        
-        
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS            
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('p').append('windspeed: ' + windspeed);
+        // $('p').append('windspeed: ' + windspeed);
         
-        $('p').append('temp RIO: ' + temp);
-        
-        $('p').append('humidity: ' + humidity);
+        // $('p').append('temp RIO: ' + temp);       
+        // $('p').append('humidity: ' + humidity);
        
-
-
 
         if (temp > 17 && temp < 20) {
         	$('.box1').addClass('rio17-20');
@@ -178,38 +173,38 @@ $(document).ready(function(){
 //NYC
     function myWeatherInterpretation2(){
         
+    	// $('p').html('temp NYC: ' + temp);
+        // $('p').append('humidity: ' + humidity);
+
         if (temp > 0 && temp < 30){
         	$('.box2').addClass('nyc9-13');
         }
-    
-
-        $('p').html('temp NYC: ' + temp);
-     
-        $('p').append('humidity: ' + humidity);
         
     }
 
 // SP
 
     function myWeatherInterpretation3(){
+
+    	// $('p').append('temp SP: ' + temp);
+        // $('p').append('humidity: ' + humidity);
         
     	if (temp > 20 && temp < 25) {
     		$('.box3').addClass('sp20-25')
     	}
 
     	if (temp > 25 && temp < 30) {
-    		$('box3').addClass('sp25-30')
+    		$('.box3').addClass('sp25-30')
     	}
-
-        $('p').append('temp SP: ' + temp);
-        
-        $('p').append('humidity: ' + humidity);
         
     }
 
  // CHICAGO
 
     function myWeatherInterpretation4(){
+
+    	// $('p').append('temp CHICAGO: ' + temp);   
+        // $('p').append('humidity: ' + humidity);
 
     	if (temp > 5 && temp < 10){
     		$('.box4').addClass('ccg5-10')
@@ -223,15 +218,14 @@ $(document).ready(function(){
     		$('.box4').addClass('ccg15-20');
     	}
         
-        $('p').append('temp CHICAGO: ' + temp);
-        
-        $('p').append('humidity: ' + humidity);
-        
     }
 
 //CARTAGENA 
 
     function myWeatherInterpretation5(){
+
+    	// $('p').append('temp CTG: ' + temp);
+        // $('p').append('humidity: ' + humidity);
         
     	if (temp > 10 && temp < 15) {
     		$('.box5').addClass('ctg10-15');
@@ -244,18 +238,15 @@ $(document).ready(function(){
     	if (temp > 20 && temp < 30) {
     		$('.box5').addClass('ctg20-30');
     	}
-
-        $('p').append('temp CTG: ' + temp);
-        
-        $('p').append('humidity: ' + humidity);
         
     }
 
+// LONDON
+
     function myWeatherInterpretation6(){
         
-        $('p').append('temp: ' + temp);
-        
-        $('p').append('humidity: ' + humidity);
+        // $('p').append('temp LND: ' + temp); 
+        // $('p').append('humidity: ' + humidity);
         
     }
 

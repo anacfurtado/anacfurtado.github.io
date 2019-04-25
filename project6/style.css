@@ -1,5 +1,8 @@
 body {
-	background-color: grey;
+	background-color: #cdcdcd;
+	font-family: orpheuspro, serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 p {
@@ -39,10 +42,20 @@ p {
 	color: white;
 	text-align: center;
 	width: 100vw;
-	height: 10vh;
+	height: 5vh;
 	position: absolute;
 	top: 0px;
 
+}
+
+/* CITIES */
+
+.rio, .ny, .sp, .chicago, .ctg {
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+	width: 100px;
+	text-align: center;
 }
 
 
@@ -50,7 +63,7 @@ p {
 	position: absolute;
 	left: 0vw;
 	width: 20vw;
-	height: 80vh;
+	height: 75vh;
 	border-color: grey;
 	border-width: 3px;
 	border-style: solid;
@@ -63,7 +76,7 @@ p {
 	position: absolute;
 	left: 20vw;
 	width: 20vw;
-	height: 80vh;
+	height: 75vh;
 	border-color: grey;
 	border-width: 3px;
 	border-style: solid;
@@ -75,7 +88,7 @@ p {
 	position: absolute; 
 	left: 40vw;
 	width: 20vw;
-	height: 80vh;
+	height: 75vh;
 	border-color: grey;
 	border-width: 3px;
 	border-style: solid;
@@ -87,7 +100,7 @@ p {
 	position: absolute;
 	left: 60vw;
 	width: 20vw;
-	height: 80vh;
+	height: 75vh;
 	border-color: grey;
 	border-width: 3px;
 	border-style: solid;
@@ -99,7 +112,7 @@ p {
 	position: absolute;
 	left: 80vw;
 	width: 20vw;
-	height: 80vh;
+	height: 75vh;
 	border-color: grey;
 	border-width: 3px;
 	border-style: solid;

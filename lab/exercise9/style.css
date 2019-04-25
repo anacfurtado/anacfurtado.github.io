@@ -45,4 +45,34 @@
 	font-family: helvetica;
 	font-size: 50px;
 	color: grey;
+	z-index: 100;
+}
+
+.box1 {
+	width: 33.3vw;
+	height: 100vh;
+	position: absolute;
+	right: 0px;
+	border-color: black;
+	border-style: solid;
+}
+
+
+.box3 {
+	width: 33.3vw;
+	height: 100vh;
+	position: absolute;
+	right: 33.3vw;
+	border-color: black;
+	border-style: solid;
+}
+
+
+.box2 {
+	width: 33.3vw;
+	height: 100vh;
+	position: absolute;
+	right: 66.6vw;
+	border-color: black;
+	border-style: solid;
 }
