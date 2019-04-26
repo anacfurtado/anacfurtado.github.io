@@ -54,10 +54,27 @@ p {
 	border-color: white;
 	border-width: 3px;
 	border-style: solid;
-	width: 100px;
+	width: 10vw;
 	text-align: center;
 }
 
+.rio {
+	position: absolute;
+	left: 4vw;
+	top: 6vh;
+}
+
+.ny {
+	position: absolute;
+	left: 4vw;
+	top: 12vh;
+}
+
+.sp {
+	position: absolute;
+	left: 4vw;
+	top: 18vh;
+}
 
 .box1 {
 	position: absolute;

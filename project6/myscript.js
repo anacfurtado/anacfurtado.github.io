@@ -187,7 +187,7 @@ $(document).ready(function(){
     function myWeatherInterpretation3(){
 
     	// $('p').append('temp SP: ' + temp);
-        // $('p').append('humidity: ' + humidity);
+     //    $('p').append('humidity: ' + humidity);
         
     	if (temp > 20 && temp < 25) {
     		$('.box3').addClass('sp20-25')
