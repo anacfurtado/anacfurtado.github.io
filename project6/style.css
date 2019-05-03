@@ -1,5 +1,5 @@
 body {
-	background-color: #cdcdcd;
+	background-color: white;
 	font-family: orpheuspro, serif;
 	font-weight: 400;
 	font-style: normal;
@@ -11,197 +11,114 @@ p {
 }
 
 
-.bottombar {
-	width: 100vw;
-	height: 10vh;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	color: white;
-	background-color: grey;
-	border-color: grey;
-	border-width: 5px;
-	border-style: solid;
-	margin: 0px;
-	text-align: center;
-	padding-top: 30px;
-	font-size: 30px;
-	font-family: orpheuspro, serif;
-	font-weight: 400;
-	font-style: normal;
-
-}
 
 .pick {
-	margin-top: 20px;
-	font-size: 30px;
-	font-family: orpheuspro, serif;
-	font-weight: 400;
+	margin-top: 10px;
+	font-family: Basic;
 	font-style: normal;
-	position: absolute;
-	color: white;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 45px;
 	text-align: center;
+	position: absolute;
+	color: black;
 	width: 100vw;
 	height: 5vh;
-	position: absolute;
-	top: 0px;
+	top: 5vh;
 
 }
 
-/* CITIES */
+/*CITY BUTTONS*/
 
-.rio, .ny, .sp, .chicago, .ctg {
+.button {
 	border-color: white;
 	border-width: 3px;
 	border-style: solid;
 	width: 10vw;
 	text-align: center;
+	background-color: #E5E5E5;
 }
 
-.rio {
-	position: absolute;
-	left: 4vw;
-	top: 6vh;
+.button-container {
+	position: fixed;
+	top: 20%;
+	width: 100%;
+	height: 150px;
+	display: grid;
+	align-content: center;
+	align-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr; 
 }
 
-.ny {
-	position: absolute;
-	left: 4vw;
-	top: 12vh;
+.grid-btn-child {
+	margin: 1em;
+	margin-left: 4em;
+	margin-right: 2em;
+	align-content: center;
 }
 
-.sp {
-	position: absolute;
-	left: 4vw;
-	top: 18vh;
+.btn-selected {
+	background-color: #C4C4C4;
 }
 
-.box1 {
-	position: absolute;
+.box-container {
+	position: fixed;
+	top: 55%;
+	width: 100%;
+	height: 250px;
+	display: grid;
+	align-content: center;
+	align-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr; 
+	z-index: 1;
+	transition: all .5s ease-in-out;
+}
+
+.expanded {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.expanded .boxes {
+	width: 100%;
+	height: 100%;
+}
+
+.boxes {
+	align-content: center;
 	left: 0vw;
-	width: 20vw;
-	height: 75vh;
-	border-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	bottom: 0px;
-	border-top-width: 3px;
+	width: 15vw;
+	height: 15vw;
+	margin: 1em;
+	/*padding: 1em;*/
+	background-color: lightgray;
+	align-content: center;
+	text-align: center;
 }
 
-.box2 {
-	
-	position: absolute;
-	left: 20vw;
-	width: 20vw;
-	height: 75vh;
-	border-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	bottom: 0px;
-	border-top-width: 3px;
+.names-container {
+	position: fixed;
+	top: 83%;
+	width: 100%;
+	height: 250px;
+	display: grid;
+	align-content: center;
+	align-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr; 
+	z-index: -1;
 }
 
-.box3 {
-	position: absolute; 
-	left: 40vw;
-	width: 20vw;
-	height: 75vh;
-	border-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	bottom: 0px;
-	border-top-width: 3px;
-}
-
-.box4 {
-	position: absolute;
-	left: 60vw;
-	width: 20vw;
-	height: 75vh;
-	border-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	bottom: 0px;
-	border-top-width: 3px;
-}
-
-.box5 {
-	position: absolute;
-	left: 80vw;
-	width: 20vw;
-	height: 75vh;
-	border-color: grey;
-	border-width: 3px;
-	border-style: solid;
-	bottom: 0px;
-	border-top-width: 3px;
-}
-
-
-/* COLORS */
-
-.nyc9-13 {
-	background-color: #383D3B;
-}
-
-/* RIO */
-
-.rio17-20 {
-	background-color: #94B0DA;
-}
-
-.rio20-24 {
-	background-color: #E0BE36;
-}
-
-.rio25-30 {
-	background-color: #61E8E1;
-}
-
-.rio30-35 {
-	background-color: #75DBCD;
-}
-
-/* SP */
-
-.sp20-25 {
-	background-color: #998650;
-}
-
-.sp25-30 {
-	background-color: #697A21;
-}
-
-/* CCG */
-
-.ccg5-10 {
-	background-color: #CDCACC;
-}
-
-.ccg10-15 {
-	background-color: #AC7B84;
-}
-
-.ccg15-20 {
-	background-color: #693668;
+.names {
+	width: 15vw;
+	align-content: center;
+	text-align: center;
 }
 
 
 
-/* CARTAGENA */
 
-.ctg10-15 {
-	background-color: #F5E3E0;
-}
-
-.ctg15-20 {
-	background-color: #CEE397;
-}
-
-.ctg20-30 {
-	background-color: #FCA17D;
-}
-/* p ctg #CEE397 
-
-
-*/
