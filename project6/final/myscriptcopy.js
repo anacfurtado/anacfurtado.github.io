@@ -11,60 +11,62 @@ var weatherdescription; //Weather condition within the group
 var cloudiness; //Cloudiness, %
 var h = 0, s = 50, l = 50;
 
+
+
 var windspeed2;
 var temp2;
 var tempmax2;
 var tempmin2;
 var humidity2;
 
-var windspeed3;
-var temp3;
-var tempmax3;
-var tempmin3;
-var humidity3;
+// var windspeed3;
+// var temp3;
+// var tempmax3;
+// var tempmin3;
+// var humidity3;
 
-var windspeed4;
-var temp4;
-var tempmax4;
-var tempmin4;
-var humidity4;
+// var windspeed4;
+// var temp4;
+// var tempmax4;
+// var tempmin4;
+// var humidity4;
 
-var windspeed5;
-var temp5;
-var tempmax5;
-var tempmin5;
-var humidity5;
+// var windspeed5;
+// var temp5;
+// var tempmax5;
+// var tempmin5;
+// var humidity5;
 
-var windspeed6;
-var temp6;
-var tempmax6;
-var tempmin6;
-var humidity6;
+// var windspeed6;
+// var temp6;
+// var tempmax6;
+// var tempmin6;
+// var humidity6;
 
-var windspeed7;
-var temp7;
-var tempmax7;
-var tempmin7;
-var humidity7;
+// var windspeed7;
+// var temp7;
+// var tempmax7;
+// var tempmin7;
+// var humidity7;
 
-var windspeed7;
-var temp7;
-var tempmax7;
-var tempmin7;
-var humidity7;
+// var windspeed7;
+// var temp7;
+// var tempmax7;
+// var tempmin7;
+// var humidity7;
 
-var windspeed8;
-var temp8;
-var tempmax8;
-var tempmin8;
-var humidity8;
+// var windspeed8;
+// var temp8;
+// var tempmax8;
+// var tempmin8;
+// var humidity8;
 
 $(document).ready(function() {
 
 //UNSELECT
     $('.box-container').click(function() {
         $(this).toggleClass("expanded");
-        $(".boxes").empty();
+        //$(".boxes").empty();
     })
 
 // BUTTONS
@@ -176,9 +178,12 @@ $(document).ready(function() {
 
 
 //RIO 
-  function determineSaturation (humidity, windspeed, temp, tempmax, tempmin) {
+  function determineSaturationrio (humidity, windspeed, temp, tempmax, tempmin) {
     console.log("determineSaturation");
-    //var l1 = 0;
+    var l1 = 0;
+    var l2 = 0;
+    var l3 = 0;
+    var l4 = 0;
     if(humidity < 10) {
       l1=10;
       $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
@@ -306,12 +311,53 @@ $(document).ready(function() {
     }
 
 // WINDSPEED
+
+    if (windspeed < 0){
+        l5=0;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 0 && windspeed < 1){
+        l5=10;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 1 && windspeed < 2){
+        l5=20;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 2 && windspeed < 3){
+        l5=30;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 3 && windspeed < 4){
+        l5=40;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 4 && windspeed < 5){
+        l5=50;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 5 && windspeed < 6){
+        l5=60;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 6 && windspeed < 7){
+        l5=70;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 7 && windspeed < 8){
+        l5=80;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
+    }
+    else if (windspeed > 9 && windspeed < 10){
+        l5=90;
+        $('.box5').css({backgroundColor: 'hsla('+h+','+s+'%,'+l5+'%, 1)'});
     }
 
-                    //NYC
+    
+    }
 
-// // NYC
-//     function determineSaturation (humidity2, windspeed2, temp2, tempmax2, tempmin2) {
+
+//       function determineSaturationsp (humidity2, windspeed2, temp2, tempmax2, tempmin2) {
 //     console.log("determineSaturation");
 //     //var l1 = 0;
 //     if(humidity2 < 10) {
@@ -439,293 +485,11 @@ $(document).ready(function() {
 //         l4=5;
 //         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
 //     }
-    
-//   }
 
-// //WINDSPEED
-
-
-//                     //SP
-// // SP
-//     function determineSaturation (humidity3, windspeed3, temp3, tempmax3, tempmin3) {
-//     console.log("determineSaturation");
-//     //var l1 = 0;
-//     if(humidity3 < 10) {
-//       l1=10;
-//       $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//     }
-//     else if(humidity3 > 20 && humidity3 < 30){
-//         l1=10;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//       // do something
-//       //setColor();
+// // WINDSPEED
 //     }
 
-//     else if(humidity3 > 30 && humidity3 < 40){
-//         l1=40;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         //setColor();
-//     }
-
-//     else if(humidity3 > 40 && humidity3 < 50){
-//         l1=50;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         //setColor();
-//     }
-
-//     else if(humidity3 > 50 && humidity3 < 60){
-//         l1=60;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-
-//     else if(humidity3 > 70 && humidity3 < 80){
-//         l1=80;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-//     else if(humidity3 > 80 && humidity3 < 90){
-//         l1=80;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-//     else if(humidity3 > 90 && humidity3 < 100){
-//         l1=100;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }  
-//     else if(humidity3 == 100){
-//         l1=100;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }   
-
-// // TEMP MIN
-
-//     if (tempmin3 < 0){
-//         l2=95;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin3 > 0 && tempmin3 < 10){
-//         l2=80;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin3 > 10 && tempmin3 < 20){
-//         l2=60;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin3 > 20 && tempmin3 < 30){
-//         l2=40;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin3 > 30 && tempmin3 < 40){
-//         l2=20;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin3 > 40 && tempmin3 < 50){
-//         l2=5;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-
-// // TEMP 
-
-//     if (temp3 < 0){
-//         l3=0;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp3 > 0 && temp3 < 10){
-//         l3=10;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp3 > 10 && temp3 < 20){
-//         l3=20;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp3 > 20 && temp3 < 30){
-//         l3=30;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp3 > 30 && temp3 < 40){
-//         l3=40;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp3 > 40 && temp3 < 50){
-//         l3=50;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-
-// // TEMP MAX 
-    
-//     if (tempmax3 < 0){
-//         l4=95;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax3 > 0 && tempmax3 < 10){
-//         l4=80;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax3 > 10 && tempmax3 < 20){
-//         l4=60;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax3 > 20 && tempmax3 < 30){
-//         l4=40;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax3 > 30 && tempmax3 < 40){
-//         l4=20;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax3 > 40 && tempmax3 < 50){
-//         l4=5;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-    
-//   }
-
-// //WINDSPEED
-
-                   
-// // CHICAGO
-//     function determineSaturation (humidity4, windspeed4, temp4, tempmax4, tempmin4) {
-//     console.log("determineSaturation");
-//     //var l1 = 0;
-//     if(humidity4 < 10) {
-//       l1=10;
-//       $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//     }
-//     else if(humidity4 > 20 && humidity4 < 30){
-//         l1=10;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//       // do something
-//       //setColor();
-//     }
-
-//     else if(humidity4 > 30 && humidity4 < 40){
-//         l1=40;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         //setColor();
-//     }
-
-//     else if(humidity4 > 40 && humidity4 < 50){
-//         l1=50;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         //setColor();
-//     }
-
-//     else if(humidity4 > 50 && humidity4 < 60){
-//         l1=60;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-
-//     else if(humidity4 > 70 && humidity4 < 80){
-//         l1=80;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-//     else if(humidity4 > 80 && humidity4 < 90){
-//         l1=80;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }
-//     else if(humidity4 > 90 && humidity4 < 100){
-//         l1=100;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     } 
-
-//     else if(humidity4 == 100){
-//         l1=100;
-//         $('.box1').css({backgroundColor: 'hsla('+h+','+s+'%,'+l1+'%, 1)'});
-//         // setColor();
-//     }   
-
-// // TEMP MIN
-
-//     if (tempmin4 < 0){
-//         l2=95;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin4 > 0 && tempmin4 < 10){
-//         l2=80;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin4 > 10 && tempmin4 < 20){
-//         l2=60;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin4 > 20 && tempmin4 < 30){
-//         l2=40;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin4 > 30 && tempmin4 < 40){
-//         l2=20;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-//     else if (tempmin4 > 40 && tempmin4 < 50){
-//         l2=5;
-//         $('.box2').css({backgroundColor: 'hsla('+h+','+s+'%,'+l2+'%, 1)'});
-//     }
-
-// // TEMP 
-
-//     if (temp4 < 0){
-//         l3=0;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp4 > 0 && temp4 < 10){
-//         l3=10;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp4 > 10 && temp4 < 20){
-//         l3=20;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp4 > 20 && temp4 < 30){
-//         l3=30;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp4 > 30 && temp4 < 40){
-//         l3=40;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-//     else if (temp4 > 40 && temp4 < 50){
-//         l3=50;
-//         $('.box3').css({backgroundColor: 'hsla('+h+','+s+'%,'+l3+'%, 1)'});
-//     }
-
-// // TEMP MAX 
-    
-//     if (tempmax4 < 0){
-//         l4=95;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax4 > 0 && tempmax4 < 10){
-//         l4=80;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax4 > 10 && tempmax4 < 20){
-//         l4=60;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax4 > 20 && tempmax4 < 30){
-//         l4=40;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax4 > 30 && tempmax4 < 40){
-//         l4=20;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-//     else if (tempmax4 > 40 && tempmax4 < 50){
-//         l4=5;
-//         $('.box4').css({backgroundColor: 'hsla('+h+','+s+'%,'+l4+'%, 1)'});
-//     }
-    
-//   }
-
-// //WINDSPEED
-
+ 
 
 
 
@@ -751,6 +515,8 @@ $(document).ready(function() {
             humidity = results.main.humidity;
             cloudiness = results.clouds.all;
 
+
+
             myWeatherInterpretation1();
             $('.rio').click(function () {
 
@@ -761,20 +527,25 @@ $(document).ready(function() {
                 // $('.box5').append('windspeed: ' + windspeed);
 
 
-                $('.box1').append(humidity);
-                $('.box2').append(tempmin);       
-                $('.box3').append(temp);
-                $('.box4').append(tempmax);
-                $('.box5').append(windspeed);
+                $('.numbers1').html(humidity);
+                $('.numbers2').html(tempmin);       
+                $('.numbers3').html(temp);
+                $('.numbers4').html(tempmax);
+                $('.numbers5').html(windspeed);
                 // $(this).toggleClass("expanded");
                 // $(".boxes").empty();
+
+                $('.btn-container').click(function() {
+                $(this).toggleClass("expanded");
+                $(".boxes").empty();
+             })
 
                 console.log("Rio clicked");
                 //generateColor();
                 h = 226;
                 //generateShade();
                 //setColor();
-                determineSaturation(humidity, windspeed, temp, tempmin, tempmax);
+                determineSaturationrio(humidity, windspeed, temp, tempmin, tempmax);
                 console.log(temp);
                 console.log(humidity);
                 console.log(windspeed);
@@ -794,13 +565,13 @@ $(document).ready(function() {
         success: function(results){
             weathertext = results.weather[0].main;
             weatherdescription = results.weather[0].description;
-            windspeed2 = results.wind.speed;
+            windspeed3 = results.wind.speed;
             winddeg = results.wind.deg;
-            tempmin2 = results.main.temp_min;
-            tempmax2 = results.main.temp_max;
-            temp2 = results.main.temp;
+            tempmin3 = results.main.temp_min;
+            tempmax3 = results.main.temp_max;
+            temp3 = results.main.temp;
             pressure = results.main.pressure;
-            humidity2 = results.main.humidity;
+            humidity3 = results.main.humidity;
             cloudiness = results.clouds.all;
 
             myWeatherInterpretation2();
@@ -809,19 +580,25 @@ $(document).ready(function() {
                 h=360;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity2, windspeed2, temp2, tempmin2, tempmax2);
+                determineSaturationrio(humidity3, windspeed3, temp3, tempmin3, tempmax3);
                 // setColor();
-                console.log(temp2);
-                console.log(humidity2);
-                console.log(windspeed2);
-                console.log(tempmin2);
-                console.log(tempmax2);
+                console.log(temp3);
+                console.log(humidity3);
+                console.log(windspeed3);
+                console.log(tempmin3);
+                console.log(tempmax3);
 
-                $('.box1').append(humidity2);
-                $('.box2').append(tempmin2);       
-                $('.box3').append(temp2);
-                $('.box4').append(tempmax2);
-                $('.box5').append(windspeed2);
+                // $('.box1').html(humidity3);
+                // $('.box2').html(tempmin3);       
+                // $('.box3').html(temp3);
+                // $('.box4').html(tempmax3);
+                // $('.box5').html(windspeed3);
+
+                $('.numbers1').html(humidity3);
+                $('.numbers2').html(tempmin3);       
+                $('.numbers3').html(temp3);
+                $('.numbers4').html(tempmax3);
+                $('.numbers5').html(windspeed3);
 
             });
 
@@ -835,34 +612,43 @@ $(document).ready(function() {
         success: function(results){
             weathertext = results.weather[0].main;
             weatherdescription = results.weather[0].description;
-            windspeed3 = results.wind.speed;
+            windspeed2 = results.wind.speed;
             winddeg = results.wind.deg;
-            tempmin3 = results.main.temp_min;
-            tempmax3 = results.main.temp_max;
-            temp3 = results.main.temp;
+            tempmin2 = results.main.temp_min;
+            tempmax2 = results.main.temp_max;
+            temp2 = results.main.temp;
             pressure = results.main.pressure;
-            humidity3 = results.main.humidity;
+            humidity2 = results.main.humidity;
             cloudiness = results.clouds.all;
 
-
-            myWeatherInterpretation3();
+            myWeatherInterpretation2();
             $('.sp').click(function () {
                 console.log("SP clicked");
-                h = 139;
+                h=139;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity3, windspeed3, temp3, tempmin3, tempmax3);
+                determineSaturationrio(humidity2, windspeed2, temp2, tempmin2, tempmax2);
                 // setColor();
+                console.log(temp2);
+                console.log(humidity2);
+                console.log(windspeed2);
+                console.log(tempmin2);
+                console.log(tempmax2);
 
-                $('.box1').append(humidity3);
-                $('.box2').append(tempmin3);       
-                $('.box3').append(temp3);
-                $('.box4').append(tempmax3);
-                $('.box5').append(windspeed3);
+                // $('.box1').html(humidity2);
+                // $('.box2').html(tempmin2);       
+                // $('.box3').html(temp2);
+                // $('.box4').html(tempmax2);
+                // $('.box5').html(windspeed2);
 
-                // console.log(humidity3);
-                // console.log(tempmin3);
+                $('.numbers1').html(humidity2);
+                $('.numbers2').html(tempmin2);       
+                $('.numbers3').html(temp2);
+                $('.numbers4').html(tempmax2);
+                $('.numbers5').html(windspeed2);
+
             });
+
         }
     });  
 
@@ -888,14 +674,20 @@ $(document).ready(function() {
                 h = 287;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity4, windspeed4, temp4, tempmin4, tempmax4);
+                determineSaturationrio(humidity4, windspeed4, temp4, tempmin4, tempmax4);
                 // setColor();
 
-                $('.box1').append(humidity4);
-                $('.box2').append(tempmin4);       
-                $('.box3').append(temp4);
-                $('.box4').append(tempmax4);
-                $('.box5').append(windspeed4);
+                // $('.box1').html(humidity4);
+                // $('.box2').html(tempmin4);       
+                // $('.box3').html(temp4);
+                // $('.box4').html(tempmax4);
+                // $('.box5').html(windspeed4);
+
+                $('.numbers1').html(humidity4);
+                $('.numbers2').html(tempmin4);       
+                $('.numbers3').html(temp4);
+                $('.numbers4').html(tempmax4);
+                $('.numbers5').html(windspeed4);
             });
 
         }
@@ -924,14 +716,20 @@ $(document).ready(function() {
                 h = 167;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity5, windspeed5, temp5, tempmin5, tempmax5);
+                determineSaturationrio(humidity5, windspeed5, temp5, tempmin5, tempmax5);
                 // setColor();
 
-                $('.box1').append(humidity5);
-                $('.box2').append(tempmin5);       
-                $('.box3').append(temp5);
-                $('.box4').append(tempmax5);
-                $('.box5').append(windspeed5);
+                // $('.box1').html(humidity5);
+                // $('.box2').html(tempmin5);       
+                // $('.box3').html(temp5);
+                // $('.box4').html(tempmax5);
+                // $('.box5').html(windspeed5);
+
+                $('.numbers1').html(humidity5);
+                $('.numbers2').html(tempmin5);       
+                $('.numbers3').html(temp5);
+                $('.numbers4').html(tempmax5);
+                $('.numbers5').html(windspeed5);
             });
         }
     });
@@ -959,14 +757,20 @@ $(document).ready(function() {
                 h = 253;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity6, windspeed6, temp6, tempmin6, tempmax6);
+                determineSaturationrio(humidity6, windspeed6, temp6, tempmin6, tempmax6);
                 // setColor();
 
-                $('.box1').append(humidity6);
-                $('.box2').append(tempmin6);       
-                $('.box3').append(temp6);
-                $('.box4').append(tempmax6);
-                $('.box5').append(windspeed6);
+                // $('.box1').html(humidity6);
+                // $('.box2').html(tempmin6);       
+                // $('.box3').html(temp6);
+                // $('.box4').html(tempmax6);
+                // $('.box5').html(windspeed6);
+
+                $('.numbers1').html(humidity6);
+                $('.numbers2').html(tempmin6);       
+                $('.numbers3').html(temp6);
+                $('.numbers4').html(tempmax6);
+                $('.numbers5').html(windspeed6);
             });
 
 
@@ -996,14 +800,20 @@ $(document).ready(function() {
                 h = 326;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity7, windspeed7, temp7, tempmin7, tempmax7);
+                determineSaturationrio(humidity7, windspeed7, temp7, tempmin7, tempmax7);
                 // setColor();
 
-                $('.box1').append(humidity7);
-                $('.box2').append(tempmin7);       
-                $('.box3').append(temp7);
-                $('.box4').append(tempmax7);
-                $('.box5').append(windspeed7);
+                // $('.box1').html(humidity7);
+                // $('.box2').html(tempmin7);       
+                // $('.box3').html(temp7);
+                // $('.box4').html(tempmax7);
+                // $('.box5').html(windspeed7);
+
+                $('.numbers1').html(humidity7);
+                $('.numbers2').html(tempmin7);       
+                $('.numbers3').html(temp7);
+                $('.numbers4').html(tempmax7);
+                $('.numbers5').html(windspeed7);
             });
 
 
@@ -1033,14 +843,20 @@ $(document).ready(function() {
                 h = 233;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity8, windspeed8, temp8, tempmin8, tempmax8);
+                determineSaturationrio(humidity8, windspeed8, temp8, tempmin8, tempmax8);
                 // setColor();
 
-                $('.box1').append(humidity8);
-                $('.box2').append(tempmin8);       
-                $('.box3').append(temp8);
-                $('.box4').append(tempmax8);
-                $('.box5').append(windspeed8);
+                // $('.box1').html(humidity8);
+                // $('.box2').html(tempmin8);       
+                // $('.box3').html(temp8);
+                // $('.box4').html(tempmax8);
+                // $('.box5').html(windspeed8);
+
+                $('.numbers1').html(humidity8);
+                $('.numbers2').html(tempmin8);       
+                $('.numbers3').html(temp8);
+                $('.numbers4').html(tempmax8);
+                $('.numbers5').html(windspeed8);
             });
 
 
@@ -1070,14 +886,20 @@ $(document).ready(function() {
                 h = 60;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity9, windspeed9, temp9, tempmin9, tempmax9);
+                determineSaturationrio(humidity9, windspeed9, temp9, tempmin9, tempmax9);
                 // setColor();
 
-                $('.box1').append(humidity9);
-                $('.box2').append(tempmin9);       
-                $('.box3').append(temp9);
-                $('.box4').append(tempmax9);
-                $('.box5').append(windspeed9);
+                // $('.box1').html(humidity9);
+                // $('.box2').html(tempmin9);       
+                // $('.box3').html(temp9);
+                // $('.box4').html(tempmax9);
+                // $('.box5').html(windspeed9);
+
+                $('.numbers1').html(humidity9);
+                $('.numbers2').html(tempmin9);       
+                $('.numbers3').html(temp9);
+                $('.numbers4').html(tempmax9);
+                $('.numbers5').html(windspeed9);
             });
 
 
@@ -1107,14 +929,20 @@ $(document).ready(function() {
                 h = 36;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity10, windspeed10, temp10, tempmin10, tempmax10);
+                determineSaturationrio(humidity10, windspeed10, temp10, tempmin10, tempmax10);
                 // setColor();
 
-                $('.box1').append(humidity10);
-                $('.box2').append(tempmin10);       
-                $('.box3').append(temp10);
-                $('.box4').append(tempmax10);
-                $('.box5').append(windspeed10);
+                // $('.box1').html(humidity10);
+                // $('.box2').html(tempmin10);       
+                // $('.box3').html(temp10);
+                // $('.box4').html(tempmax10);
+                // $('.box5').html(windspeed10);
+
+                $('.numbers1').html(humidity10);
+                $('.numbers2').html(tempmin10);       
+                $('.numbers3').html(temp10);
+                $('.numbers4').html(tempmax10);
+                $('.numbers5').html(windspeed10);
             });
 
 
@@ -1144,14 +972,20 @@ $(document).ready(function() {
                 h = 5;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity11, windspeed11, temp11, tempmin11, tempmax11);
+                determineSaturationrio(humidity11, windspeed11, temp11, tempmin11, tempmax11);
                 // setColor();
 
-                $('.box1').append(humidity11);
-                $('.box2').append(tempmin11);       
-                $('.box3').append(temp11);
-                $('.box4').append(tempmax11);
-                $('.box5').append(windspeed11);
+                // $('.box1').html(humidity11);
+                // $('.box2').html(tempmin11);       
+                // $('.box3').html(temp11);
+                // $('.box4').html(tempmax11);
+                // $('.box5').html(windspeed11);
+
+                $('.numbers1').html(humidity11);
+                $('.numbers2').html(tempmin11);       
+                $('.numbers3').html(temp11);
+                $('.numbers4').html(tempmax11);
+                $('.numbers5').html(windspeed11);
             });
 
 
@@ -1181,14 +1015,20 @@ $(document).ready(function() {
                 h = 197;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity12, windspeed12, temp12, tempmin12, tempmax12);
+                determineSaturationrio(humidity12, windspeed12, temp12, tempmin12, tempmax12);
                 // setColor();
 
-                $('.box1').append(humidity12);
-                $('.box2').append(tempmin12);       
-                $('.box3').append(temp12);
-                $('.box4').append(tempmax12);
-                $('.box5').append(windspeed12);
+                // $('.box1').html(humidity12);
+                // $('.box2').html(tempmin12);       
+                // $('.box3').html(temp12);
+                // $('.box4').html(tempmax12);
+                // $('.box5').html(windspeed12);
+
+                $('.numbers1').html(humidity12);
+                $('.numbers2').html(tempmin12);       
+                $('.numbers3').html(temp12);
+                $('.numbers4').html(tempmax12);
+                $('.numbers5').html(windspeed12);
             });
 
 
@@ -1218,14 +1058,20 @@ $(document).ready(function() {
                 h = 179;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity13, windspeed13, temp13, tempmin13, tempmax13);
+                determineSaturationrio(humidity13, windspeed13, temp13, tempmin13, tempmax13);
                 // setColor();
 
-                $('.box1').append(humidity13);
-                $('.box2').append(tempmin13);       
-                $('.box3').append(temp13);
-                $('.box4').append(tempmax13);
-                $('.box5').append(windspeed13);
+                // $('.box1').html(humidity13);
+                // $('.box2').html(tempmin13);       
+                // $('.box3').html(temp13);
+                // $('.box4').html(tempmax13);
+                // $('.box5').html(windspeed13);
+
+                $('.numbers1').html(humidity13);
+                $('.numbers2').html(tempmin13);       
+                $('.numbers3').html(temp13);
+                $('.numbers4').html(tempmax13);
+                $('.numbers5').html(windspeed13);
             });
 
 
@@ -1255,14 +1101,20 @@ $(document).ready(function() {
                 h = 122;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity14, windspeed14, temp14, tempmin14, tempmax14);
+                determineSaturationrio(humidity14, windspeed14, temp14, tempmin14, tempmax14);
                 // setColor();
 
-                $('.box1').append(humidity14);
-                $('.box2').append(tempmin14);       
-                $('.box3').append(temp14);
-                $('.box4').append(tempmax14);
-                $('.box5').append(windspeed14);
+                // $('.box1').html(humidity14);
+                // $('.box2').html(tempmin14);       
+                // $('.box3').html(temp14);
+                // $('.box4').html(tempmax14);
+                // $('.box5').html(windspeed14);
+
+                $('.numbers1').html(humidity14);
+                $('.numbers2').html(tempmin14);       
+                $('.numbers3').html(temp14);
+                $('.numbers4').html(tempmax14);
+                $('.numbers5').html(windspeed14);
             });
 
 
@@ -1292,14 +1144,20 @@ $(document).ready(function() {
                 h = 48;
                 // generateColor();
                 // generateShade();
-                determineSaturation(humidity15, windspeed15, temp15, tempmin15, tempmax15);
+                determineSaturationrio(humidity15, windspeed15, temp15, tempmin15, tempmax15);
                 // setColor();
 
-                $('.box1').append(humidity15);
-                $('.box2').append(tempmin15);       
-                $('.box3').append(temp15);
-                $('.box4').append(tempmax15);
-                $('.box5').append(windspeed15);
+                // $('.box1').html(humidity15);
+                // $('.box2').html(tempmin15);       
+                // $('.box3').html(temp15);
+                // $('.box4').html(tempmax15);
+                // $('.box5').html(windspeed15);
+
+                $('.numbers1').html(humidity15);
+                $('.numbers2').html(tempmin15);       
+                $('.numbers3').html(temp15);
+                $('.numbers4').html(tempmax15);
+                $('.numbers5').html(windspeed15);
             });
 
 

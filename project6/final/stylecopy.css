@@ -1,0 +1,234 @@
+body {
+	background-color: white;
+	/*font-family: orpheuspro, serif;
+	font-weight: 400;
+	font-style: normal;*/
+	/*font-family: abril-text, serif;
+	font-weight: 500;
+	font-style: normal;*/
+	/*font-family: poynter-oldstyle-text, serif;
+
+	font-weight: 400;
+
+	font-style: normal;*/
+
+	font-family: 'Merriweather', serif;
+
+	margin: 0px;
+
+}
+
+p {
+	position: absolute;
+	top: 50px;
+}
+
+
+
+.pick {
+	margin-top: 10px;
+	/*font-family: Basic;
+	font-style: normal;
+	font-weight: normal;*/
+	/*font-family: abril-text, serif;
+	font-weight: 500;
+	font-style: normal;*/
+
+	/*font-family: poynter-oldstyle-text, serif;
+	font-weight: 400;
+	font-style: normal;*/
+
+	/*font-family: basic-sans, sans-serif;*/
+
+	font-weight: 600;
+
+	font-style: normal;
+
+	font-size: 36px;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	color: black;
+	width: 100%;
+	height: 5vh;
+	top: 5vh;
+
+}
+
+/*CITY BUTTONS*/
+
+.button {
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+	width: 10vw;
+	text-align: center;
+	background-color: #E5E5E5;
+}
+
+.button-container {
+	position: fixed;
+	top: 25%;
+	left: 22%;
+	width: 50%;
+	height: 150px;
+	display: grid;
+	align-content: center;
+	/*align-self: center;*/
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+	margin-left: 1.5em;
+
+}
+
+.grid-btn-child {
+	margin: 0.8em;
+	margin-left: 4em;
+	margin-right: 2em;
+	align-content: center;
+	padding: 0.7em;
+	/*text-transform: uppercase;*/
+
+}
+
+.btn-selected {
+	background-color: #C4C4C4;
+}
+
+.box-container {
+	position: fixed;
+	top: 60%;
+	width: 100%;
+	height: 250px;
+	display: grid;
+	align-content: center;
+	align-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr; 
+	z-index: 1;
+	transition: all .5s ease-in-out;
+	margin-left: 1em;
+}
+
+.expanded {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0px;
+}
+
+.expanded .boxes {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.expanded > .boxes:hover > .numbers1 {
+	/*opacity: 0!important;*/
+	display: none;
+}
+
+.expanded > .boxes:hover > .numbers2 {
+	/*opacity: 0!important;*/
+	display: none;
+}
+
+.expanded > .boxes:hover > .numbers3 {
+	/*opacity: 0!important;*/
+	display: none;
+}
+
+.expanded > .boxes:hover > .numbers4 {
+	/*opacity: 0!important;*/
+	display: none;
+}
+
+.expanded > .boxes:hover > .numbers5 {
+	/*opacity: 0!important;*/
+	display: none;
+}
+
+
+
+.boxes {
+	align-content: center;
+	left: 0vw;
+	width: 15vw;
+	height: 15vw;
+	margin: 1em;
+	/*padding: 1em;*/
+	background-color: lightgray;
+	align-content: center;
+	text-align: center;
+	/*font-size: 70px;*/
+
+
+
+}
+
+.numbers1, .numbers2, .numbers3, .numbers4, .numbers5 {
+	/*text-align: center;
+	font-size: 90px;*/
+	opacity: 0;
+	font-size: 5em;
+	position: relative;
+	top: 25%;
+	
+}
+
+.box1:hover > .numbers1{
+	opacity: 0.3!important;
+	transition: all .2s ease-in-out;
+}
+
+.box2:hover > .numbers2{
+	opacity: 0.3!important;
+	transition: all .2s ease-in-out;
+
+}
+
+.box3:hover > .numbers3{
+	opacity: 0.3!important;
+	transition: all .2s ease-in-out;
+}
+
+.box4:hover > .numbers4{
+	opacity: 0.3!important;
+	transition: all .2s ease-in-out;
+}
+
+.box5:hover > .numbers5{
+	opacity: 0.3!important;
+	transition: all .2s ease-in-out;
+}
+
+
+
+
+.names-container {
+	position: fixed;
+	top: 88%;
+	width: 100%;
+	height: 250px;
+	display: grid;
+	align-content: left;
+	align-self: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr; 
+	z-index: -1;
+	margin-left: 1em;
+}
+
+.names {
+	letter-spacing: 1.5px;
+	/*font-size: 1%;*/
+	width: 15vw;
+	align-content: left;
+	text-align: left;
+	margin: 1em;
+}
+
+
+
+
