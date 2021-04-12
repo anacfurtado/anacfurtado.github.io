@@ -1,0 +1,373 @@
+html {
+	font-family: hwt-arabesque, sans-serif;
+}
+
+.title {
+	position: fixed;
+	left: 20px;
+	top: 50px;
+	width: 300px;
+}
+
+h1 {
+	font-family: hwt-arabesque, sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+	font-style: normal;
+	color: #CCCACB;
+	position: fixed;
+	left: 40px;
+	top: 30px;
+}
+/*
+.index {
+	font-family: courrier;, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	color: #CCCACB;
+	position: fixed;
+	left: 45px;
+	top: 130px;
+
+}
+
+
+.circle1 {
+	background: #9DCB3B;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 90px;
+    top: 370px;
+}
+
+.circle2 {
+	background: #6750A1;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 130px;
+    top: 650px;
+}
+
+.circle3 {
+	background: #2C4FA2;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 150px;
+    top: 250px;
+}
+
+.circle4 {
+	background: #9DCB3B;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 380px;
+    bottom: 50px;
+}
+
+.circle5 {
+	background: #006D6F;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 650px;
+    top: 100px;
+}
+
+.circle6 {
+	background: #F4EA00;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 100px;
+    top: 90px;
+}
+
+.circle7 {
+	background: #00B04C;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 380px;
+    top: 50px;
+}
+
+
+.circle8 {
+	background: #3E51A3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 30px;
+    right: 700px;
+}
+
+.circle9 {
+	background: #9DCB3B;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 650px;
+    bottom: 350px;
+}
+
+.circle10 {
+	background: #000000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 500px;
+    top: 630px;
+}
+
+.circle11 {
+	background: #000000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    right: 500px;
+    top: 630px;
+}
+
+.map {
+	width: 900px;
+	position: fixed;
+	right: 0px;
+	top: 30px;
+}
+
+*/
+
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: #FBE698;
+   background-image:
+    radial-gradient(
+      #FBE698,
+      #ffffff
+    );
+  color: #AA8888;
+  font-family: hwt-arabesque, sans-serif; 
+}
+ .blobs {
+   width: 180px;
+   height: 180px;
+   margin: 0 auto;
+   position: absolute;
+   left: 10%;
+   bottom: 10%;
+   margin-left: -150px;
+   margin-top: -150px;
+   border-radius: 100%;
+   -webkit-animation: myturn linear 16s infinite;
+   -moz-animation: myturn linear 16s infinite;
+ }
+
+ 
+ .blob {
+   position: absolute;
+   background: #557788;
+ }
+ 
+
+ .blob:nth-child(1) {
+   top: -10px;
+   left: -10px;
+   width: 150px;
+   height: 160px;
+   background: #557788;
+   border-radius: 100%;
+   -webkit-animation: mytopdown linear 3s infinite;
+   -moz-animation: mytopdown linear 3s infinite;
+   animation: mytopdown linear 3s infinite;
+ }
+ 
+ .blob:nth-child(2) {
+   top: 10px;
+   left: 10px;
+   background: #557788;
+   width: 150px;
+   height: 160px;
+   border-radius: 100%;
+   -webkit-animation: mytopleft linear 3s infinite;
+   -moz-animation: mytopleft linear 3s infinite;
+   animation: mytopleft linear 3s infinite;
+ }
+ 
+ .blob:nth-child(3) {
+   top: 10px;
+   left: -10px;
+   background: #557788;
+   width: 150px;
+   height: 160px;
+   border-radius: 100%;
+   -webkit-animation: mytopright linear 3s infinite;
+   -moz-animation: mytopright linear 3s infinite;
+   animation: mytopright linear 3s infinite;
+ }
+ 
+
+ /* Mozila + Chrome */
+
+
+ @keyframes mytopdown {
+   0% {
+     top: 0px;
+     transform: rotate(0deg) scale(1);
+   }
+   50% {
+     top: 10px;
+     transform: rotate(180deg) scale(1.04);
+   }
+   100% {
+     top: 0px;
+     transform: rotate(360deg) scale(1);
+   }
+ }
+ 
+ @keyframes mytopleft {
+   0% {
+     top: 0px;
+     transform: rotate(0deg) scale(1.05);
+   }
+   50% {
+     top: 10px;
+     transform: rotate(180deg) scale(1);
+   }
+   100% {
+     top: 0px;
+     transform: rotate(360deg) scale(1.05);
+   }
+ }
+ 
+ @keyframes mytopright {
+   0% {
+     top: -10px;
+     transform: rotate(0deg) scale(1);
+   }
+   50% {
+     top: 0px;
+     transform: rotate(180deg) scale(1.02);
+   }
+   100% {
+     top: -10px;
+     transform: rotate(360deg) scale();
+   }
+ }
+ 
+ @-webkit-keyframes myturn {
+   0% {
+     -webkit-transform: rotate(0deg) skewX(0deg);
+   }
+   100% {
+     -webkit-transform: rotate(-360deg) skewX(0deg);
+   }
+ }
+
+}
+
+/* BLOB 2*/
+
+.blobs2 {
+   width: 80px;
+   height: 80px;
+   margin: 0 auto;
+   position: absolute;
+   right: 0%;
+   bottom: 10%;
+   margin-left: -150px;
+   margin-top: -150px;
+   border-radius: 100%;
+   -webkit-animation: myturn linear 16s infinite;
+   -moz-animation: myturn linear 16s infinite;
+   &:after {
+     content: '';
+     height: 10px;
+     width: 10px;
+     border-radius: 50%;
+     background: #334455;
+     position: relative;
+     display: block;
+   }
+  &:before {
+     content: '';
+     height: 10px;
+     width: 10px;
+     border-radius: 50%;
+     background: #112222;
+     position: absolute;
+      margin-top: -60px;
+     display: block;
+      -webkit-animation: littleOrbit linear 5s infinite;
+     -moz-animation: littleOrbit linear 5s infinite;
+     animation: littleOrbit linear 5s infinite;
+   }
+ }
+ 
+ .blob2 {
+   position: absolute;
+   background: #557788;
+ }
+ 
+
+ .blob2:nth-child(1) {
+   top: -10px;
+   left: -10px;
+   width: 50px;
+   height: 60px;
+   background: #557788;
+   border-radius: 100%;
+   -webkit-animation: mytopdown linear 3s infinite;
+   -moz-animation: mytopdown linear 3s infinite;
+   animation: mytopdown linear 3s infinite;
+ }
+ 
+ .blob2:nth-child(2) {
+   top: 10px;
+   left: 10px;
+   background: #557788;
+   width: 50px;
+   height: 60px;
+   border-radius: 100%;
+   -webkit-animation: mytopleft linear 3s infinite;
+   -moz-animation: mytopleft linear 3s infinite;
+   animation: mytopleft linear 3s infinite;
+ }
+ 
+ .blob2:nth-child(3) {
+   top: 10px;
+   left: -10px;
+   background: #557788;
+   width: 50px;
+   height: 60px;
+   border-radius: 100%;
+   -webkit-animation: mytopright linear 3s infinite;
+   -moz-animation: mytopright linear 3s infinite;
+   animation: mytopright linear 3s infinite;
+ }
+
+
+
+
+
+
+
